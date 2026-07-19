@@ -2,6 +2,8 @@
 
 ## Preflight and discovery
 
+Skill setup is different from Herdr control: `scripts/install.sh` and `scripts/verify.sh` run from an ordinary shell and only require a usable `herdr --version`. The preflight below remains mandatory before every actual Herdr control action.
+
 Run from a Herdr-managed controller pane:
 
 ```bash
