@@ -1,0 +1,4 @@
+interface:
+  display_name: "Herdr Orchestrator"
+  short_description: "Manage persistent coding agents through Herdr"
+  default_prompt: "Use $herdr-orchestrator to coordinate this coding task through Herdr on my behalf."
