@@ -72,3 +72,10 @@ Select one primary coordinator per stage:
 If Herdr is unavailable or the controller is outside `HERDR_ENV=1`, stop Herdr control and explain the required setup. Do not silently downgrade to another backend when the user explicitly requested Herdr.
 
 If `ak:orchestrate` or `ak:team` is selected but unavailable, follow that skill's own preflight and failure rules. Return the blocker to the user rather than simulating the missing runtime.
+
+<!-- >>> agent-model-routing >>> -->
+Model and effort tier selection for workers is owned by the shared rule at
+`~/.claude/rules/model-routing.md`. Spawn Herdr workers through the profile
+helpers `herdr-thinker|rescuer|builder|sprinter <name> [--codex]` so every
+pane starts on the mapped tier.
+<!-- <<< agent-model-routing <<< -->
